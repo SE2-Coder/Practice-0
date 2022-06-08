@@ -55,5 +55,7 @@ int main()
 
     cout << endl;//one last line break to close the pattern.
 
+    
+
 return 0;
 }
