@@ -9,6 +9,8 @@ int main()
     int rows_counter = 65;//I create this counter for the rows.
     int space_counter = quantity - 1; //this counter works according to spaces.
 
+
+
     /*==========================================================================================
     I created a 'while' loop to create the two patterns or triangles.
     ===========================================================================================*/
@@ -55,7 +57,41 @@ int main()
 
     cout << endl;//one last line break to close the pattern.
 
-    
+    //==========================================Punto 02===========================================
 
+    /*I declare 3 new variables for the second pattern, 'under_row_counter', so that in the same way as the first pattern or diagram it counts each row.  */
+    int under_row_counter = 65;
+    int counter_letter = quantity - 1;
+    int counter_mirror_letter = letter;
+
+
+    /*I use a new while loop in the reverse way of the first diagram. The iteration will be performed until the counter 'under_row_counter is one unit short of having the value of 'letter''*/
+    while ( under_row_counter < letter )
+    {
+        /*when 'i' is less than 'counter_letter' it will go up one unit it will print the corresponding letter value to the ascii system*/
+        for ( int i = 0; i < counter_letter; i++ )
+        {
+            cout << static_cast<char>( 65 + i );/*This line allows us to print characters by walking through the ascii system as an array.*/
+        }
+
+        /*To print the spaces; 'j' will have the value of 'counter_letter', and in the same way it will be less than 'quantity', for each time the iteration goes through the spaces will be printed.*/
+        for ( int j = counter_letter; j < quantity; j++ )
+        {
+            cout << "  ";
+        }
+        cout << "  ";
+
+        //This 'for' prints the letters of the last triangle in reverse.
+        for ( int k = counter_mirror_letter-1; k >= 65; k-- )
+        {
+            cout << static_cast<char>(k);
+        }
+
+        under_row_counter++;//the counter is incremented at the end of each 'while'.
+        counter_letter--; //decrement at the end of each 'while'.
+        counter_mirror_letter--;//decrement at the end of each 'while'.
+
+        cout << endl;
+    }
 return 0;
 }
