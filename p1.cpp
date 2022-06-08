@@ -53,7 +53,7 @@ int main()
             cout << static_cast<char>(l);
         }
 
-    cout << endl;//one last line break to close the pattern.
+    cout << endl << endl;//one last line break to close the pattern.
 
 return 0;
 }
