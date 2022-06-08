@@ -10,8 +10,8 @@ int main()
     int space_counter = quantity - 1; //this counter works according to spaces.
 
     /*==========================================================================================
-    I created a 'while loop to create the two patterns or triangles'
-    */
+    I created a 'while' loop to create the two patterns or triangles.*/
+
 
 return 0;
 }
