@@ -35,7 +35,25 @@ int main()
             cout << endl;//here we print each corresponding line break.
             rows_counter++;//this counter increments for each completed while loop.
             space_counter--;//this counter decrements for each completed while loop.
+
+            
     }
+
+    //This 'for' loop prints the characters on the left side of the triangle.
+    for (int i = 0; i < quantity-1; i++)
+        {
+            cout << static_cast<char>(65 + i);
+        }
+
+    cout << " " << static_cast<char>(64 + quantity) << "  ";/*This 'cout' prints the spaces and the last letter of the selected amount of characters*/
+
+        //this 'for' loop prints the last string of characters in reverse order.
+        for (int l = rows_counter - 1; l >= 65; l-- )
+        {
+            cout << static_cast<char>(l);
+        }
+
+    cout << endl;//one last line break to close the pattern.
 
 return 0;
 }
