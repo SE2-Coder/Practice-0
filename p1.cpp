@@ -3,8 +3,19 @@ using namespace std;
 
 int main()
 {
+  
+    cout << "=========================================================================================" << endl;
+    cout << "=========== Programa de diagrama con letras practica - 0 Informatica II =================" << endl; 
   //I declare the variables for the first two triangles
-    int quantity = 26; //This variable does not indicate the number of characters in the pattern or diagram.
+    int quantity = 0; //This variable does indicate the number of characters in the pattern or diagram.
+    do
+    {
+        cout << "Digite el número entre 2 y 26 para crear el diagrama: ";
+        cin >> quantity;
+    }while(quantity < 1 || quantity > 26);
+    
+    
+    
     int letter = 65 + quantity - 1;//I use letter with the value 65, because it is the corresponding value in ascii for the letter 'A', which is the letter that all rows start with.
     int rows_counter = 65;//I create this counter for the rows.
     int space_counter = quantity - 1; //this counter works according to spaces.
